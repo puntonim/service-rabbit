@@ -1,0 +1,39 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+    method: GET
+    uri: http://inspire-prod-broker1.cern.ch:15672/api/queues/inspire/orcid_push
+  response:
+    body: {string: !!python/unicode '{"message_stats":{"ack":3818741,"ack_details":{"rate":10.2},"deliver":3819271,"deliver_details":{"rate":10.2},"deliver_get":3819271,"deliver_get_details":{"rate":10.2},"publish":3557008,"publish_details":{"rate":0.0},"redeliver":500,"redeliver_details":{"rate":0.0}},"messages":157455,"messages_details":{"rate":-14.6},"messages_ready":157415,"messages_ready_details":{"rate":-14.6},"messages_unacknowledged":40,"messages_unacknowledged_details":{"rate":0.0},"policy":"","exclusive_consumer_tag":"","consumers":5,"consumer_utilisation":0.0004907311137678359,"memory":635743304,"backing_queue_status":{"q1":0,"q2":0,"delta":["delta",35562758,90506,35653264],"q3":29486,"q4":37423,"len":157415,"pending_acks":40,"target_ram_count":"infinity","ram_msg_count":37423,"ram_ack_count":40,"next_seq_id":35653264,"persistent_count":157455,"avg_ingress_rate":4.370831225976053e-7,"avg_egress_rate":11.541552848959121,"avg_ack_ingress_rate":11.541552848959121,"avg_ack_egress_rate":11.541552848959121},"state":"running","incoming":[{"stats":{"publish":3557008,"publish_details":{"rate":0.0}},"exchange":{"name":"","vhost":"inspire"}}],"deliveries":[{"stats":{"deliver_get":14989,"deliver_get_details":{"rate":3.0},"deliver":14989,"deliver_details":{"rate":3.0},"ack":14981,"ack_details":{"rate":3.0}},"channel_details":{"name":"137.138.152.255:54568
+        -> 188.184.65.84:5672 (1)","number":1,"connection_name":"137.138.152.255:54568
+        -> 188.184.65.84:5672","peer_port":54568,"peer_host":"137.138.152.255"}},{"stats":{"redeliver":2,"redeliver_details":{"rate":0.0},"deliver_get":52546,"deliver_get_details":{"rate":2.6},"deliver":52546,"deliver_details":{"rate":2.6},"ack":52538,"ack_details":{"rate":2.6}},"channel_details":{"name":"188.184.84.6:33106
+        -> 188.184.65.84:5672 (1)","number":1,"connection_name":"188.184.84.6:33106
+        -> 188.184.65.84:5672","peer_port":33106,"peer_host":"188.184.84.6"}},{"stats":{"redeliver":2,"redeliver_details":{"rate":0.0},"deliver_get":60882,"deliver_get_details":{"rate":2.6},"deliver":60882,"deliver_details":{"rate":2.6},"ack":60874,"ack_details":{"rate":2.6}},"channel_details":{"name":"137.138.62.225:56120
+        -> 188.184.65.84:5672 (1)","number":1,"connection_name":"137.138.62.225:56120
+        -> 188.184.65.84:5672","peer_port":56120,"peer_host":"137.138.62.225"}},{"stats":{"redeliver":1,"redeliver_details":{"rate":0.0},"deliver_get":60679,"deliver_get_details":{"rate":4.0},"deliver":60679,"deliver_details":{"rate":4.0},"ack":60671,"ack_details":{"rate":4.0}},"channel_details":{"name":"137.138.44.118:51858
+        -> 188.184.65.84:5672 (1)","number":1,"connection_name":"137.138.44.118:51858
+        -> 188.184.65.84:5672","peer_port":51858,"peer_host":"137.138.44.118"}},{"stats":{"redeliver":3,"redeliver_details":{"rate":0.0},"deliver_get":59769,"deliver_get_details":{"rate":3.6},"deliver":59769,"deliver_details":{"rate":3.6},"ack":59761,"ack_details":{"rate":3.6}},"channel_details":{"name":"188.184.95.208:58324
+        -> 188.184.65.84:5672 (1)","number":1,"connection_name":"188.184.95.208:58324
+        -> 188.184.65.84:5672","peer_port":58324,"peer_host":"188.184.95.208"}}],"consumer_details":[{"channel_details":{"name":"188.184.95.208:58324
+        -> 188.184.65.84:5672 (1)","number":1,"connection_name":"188.184.95.208:58324
+        -> 188.184.65.84:5672","peer_port":58324,"peer_host":"188.184.95.208"},"queue":{"name":"orcid_push","vhost":"inspire"},"consumer_tag":"None7","exclusive":false,"ack_required":true,"prefetch_count":0,"arguments":{}},{"channel_details":{"name":"137.138.44.118:51858
+        -> 188.184.65.84:5672 (1)","number":1,"connection_name":"137.138.44.118:51858
+        -> 188.184.65.84:5672","peer_port":51858,"peer_host":"137.138.44.118"},"queue":{"name":"orcid_push","vhost":"inspire"},"consumer_tag":"None7","exclusive":false,"ack_required":true,"prefetch_count":0,"arguments":{}},{"channel_details":{"name":"137.138.62.225:56120
+        -> 188.184.65.84:5672 (1)","number":1,"connection_name":"137.138.62.225:56120
+        -> 188.184.65.84:5672","peer_port":56120,"peer_host":"137.138.62.225"},"queue":{"name":"orcid_push","vhost":"inspire"},"consumer_tag":"None6","exclusive":false,"ack_required":true,"prefetch_count":0,"arguments":{}},{"channel_details":{"name":"188.184.84.6:33106
+        -> 188.184.65.84:5672 (1)","number":1,"connection_name":"188.184.84.6:33106
+        -> 188.184.65.84:5672","peer_port":33106,"peer_host":"188.184.84.6"},"queue":{"name":"orcid_push","vhost":"inspire"},"consumer_tag":"None7","exclusive":false,"ack_required":true,"prefetch_count":0,"arguments":{}},{"channel_details":{"name":"137.138.152.255:54568
+        -> 188.184.65.84:5672 (1)","number":1,"connection_name":"137.138.152.255:54568
+        -> 188.184.65.84:5672","peer_port":54568,"peer_host":"137.138.152.255"},"queue":{"name":"orcid_push","vhost":"inspire"},"consumer_tag":"None7","exclusive":false,"ack_required":true,"prefetch_count":0,"arguments":{}}],"name":"orcid_push","vhost":"inspire","durable":true,"auto_delete":false,"arguments":{},"node":"rabbit@inspire-prod-broker1"}'}
+    headers:
+      cache-control: [no-cache]
+      content-length: ['4927']
+      content-type: [application/json]
+      date: ['Fri, 26 Oct 2018 18:08:14 GMT']
+      server: [MochiWeb/1.1 WebMachine/1.10.0 (never breaks eye contact)]
+    status: {code: 200, message: OK}
+version: 1
