@@ -12,7 +12,7 @@ PYTHON=$(shell "$(CMD_FROM_VENV)" "python")
 TOX_PY_LIST="$(shell $(TOX) -l | grep ^py | xargs | sed -e 's/ /,/g')"
 
 
-.PHONY: tox pyclean clean venv test lint isort setup.py publish
+.PHONY: tox pyclean clean venv test lint isort setup.py publish requirements
 
 tox: venv setup.py
 	$(TOX)
